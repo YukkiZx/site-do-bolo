@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.content {
+    margin: 0; /* Remove margens padrão do body */
+    height: 200vh; /* Define a altura do body para 200% da altura da viewport para permitir rolagem */
+    font-size: 18px; /* Coloca o tamanho de toda a fonte em 20 pixels */
+    color: white; /* Cor do texto */
+    position: relative; /* Necessário para o posicionamento do conteúdo */
+    flex-direction: column; /* Alinha os itens em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.background {
+    position: fixed; /* Usar fixed para que o fundo fique fixo durante o scroll */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    right: 0; /* Alinha à direita */
+    bottom: 0; /* Alinha à parte inferior */
+    background-image: url("Zelda.jpg"); /* Imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    filter: brightness(0.50); /* Diminui o brilho em 50% */
+}
+
+.imagemacima {
+    margin-bottom: 10px;
+}
+
+.textoabaixo img {
+    width: 300px; /* Ajuste para o tamanho desejado */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block;
+    margin: 0 auto;
+}
+
+#redirectButton {
+    position: absolute; /* Posiciona o botão em relação ao seu elemento pai */
+    bottom: 20px; /* Distância do fundo */
+    left: 50%; /* Alinha ao centro horizontalmente */
+    transform: translateX(-50%); /* Move o botão para a esquerda pela metade da sua largura */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    display: none; /* Inicialmente escondido */
+}
+
+#redirectButton:hover {
+    background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
